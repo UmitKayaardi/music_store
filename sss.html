@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS</title>
+    <link rel="stylesheet" href="css/sss.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>Sıkça Sorulan Sorular</h2>
+            <button class="question" onclick="toggleAnswer('answer1')">Müzik aletlerinizin garantisi var mı?</button>
+            <div id="answer1" class="answer">
+                <p>Evet, tüm müzik aletlerimiz 2 yıl garantilidir.</p>
+            </div>
+            <button class="question" onclick="toggleAnswer('answer2')">Hangi ödeme yöntemlerini kabul
+                ediyorsunuz?</button>
+            <div id="answer2" class="answer">
+                <p>Kredi kartı, banka kartı ve nakit ödeme yöntemlerini kabul ediyoruz.</p>
+            </div>
+            <button class="question" onclick="toggleAnswer('answer3')">Kargo süresi ne kadar?</button>
+            <div id="answer3" class="answer">
+                <p>Kargo süresi genellikle 3-5 iş günü arasındadır.</p>
+            </div>
+            <button class="question" onclick="toggleAnswer('answer4')">Hangi ürünler var?</button>
+            <div id="answer4" class="answer">
+                <p>Mağamızda gitarlar, kemanlar, bateriler ve piyanolar bulunmaktadır.</p>
+            </div>
+            <button class="question" onclick="toggleAnswer('answer5')">Kargo ücreti ne kadar?</button>
+            <div id="answer5" class="answer">
+                <p>Kargo ücretsizdir.</p>
+            </div>
+            <button class="question" onclick="toggleAnswer('answer6')">Hani indirimler var?</button>
+            <div id="answer6" class="answer">
+                <p>İndirimler ana sayfada bulunmaktadır.</p>
+            </div>
+            <button class="question" onclick="toggleAnswer('answer7')">Sizinle nasıl iletişime geçebilirim?</button>
+            <div id="answer7" class="answer">
+                <p>İletişim sayfamızdan bizimle iletişime geçebilisiniz.</p>
+            </div>
+            <button class="question" onclick="toggleAnswer('answer8')">Yurt dışına sipariş gönderebilir
+                misiniz?</button>
+            <div id="answer8" class="answer">
+                <p>Yurt dışı gönderim yapmıyoruz.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
